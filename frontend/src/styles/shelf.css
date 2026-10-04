@@ -1,0 +1,42 @@
+/* Shelf Component Styles */
+.large-shelf {
+    min-height: 250px;
+    min-width: 150px;
+    background-color: rgba(180, 83, 9, 0.8) !important; /* amber-700/80 */
+    border: 2px solid rgb(120, 53, 15) !important;    /* amber-900 */
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-md/lg */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.large-shelf:hover {
+    background-color: rgba(180, 83, 9, 0.9) !important;
+    transform: translateY(-2px);
+}
+
+.shelf-books-badge {
+    margin-top: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 0.65rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    white-space: nowrap;
+}
+
+.shelf-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+    padding: 1rem;
+}
